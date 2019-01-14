@@ -6,19 +6,25 @@
 body{
     background-color: 68CDD5;
 }
+
+html{ 
+	font-size: 16px; 
+}
+
 .container{
 	width: 100%;
 	margin-bottom: 100px;
 }
 
 .center{
-	text-align: center;
+    text-align: center;
 }
-
+.center p{
+    text-align: left;
+}
 .back-icon{
 	width: 54px;
 }
-
 .round-logo{
 	width: 84px;
 }
@@ -38,7 +44,7 @@ body{
 }
 
 .description{
-    font-size: 28px;
+    font-size: 1.6em;
 	color: white;
 	font-family: SimHei;
 	margin: 10%;
@@ -48,18 +54,35 @@ body{
 	color: white;
 	font-family: SimHei;
 }
+
+@media only screen and (max-width: 500px) {
+
+	html{
+		font-size: 10px;
+	}
+    .back-icon {
+        width: 27px;
+    }
+    .round-logo{
+		width: 42px;
+	}
+	.main-logo{
+		width: 92px;
+	}
+}
+
 </style>
 </head>
 <body>
 	<div class="container">
-		<img src="images/back.png"/>
+		<img class="back-icon" src="images/back.png"/>
 	</div>
 	
 	<div class="container center">
 		<img class="main-logo" src="images/grapevinelogo.png" />
 	</div>
 	
-	<div class="container">
+	<div class="container center">
 		<p class="description">葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以及线下聚会桌游道具。</p>
 	</div>
 	
